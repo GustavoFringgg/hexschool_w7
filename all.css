@@ -1,0 +1,372 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 通用樣式 */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bruno Ace SC", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #d1d1d1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/*字體大小*/
+.h2 {
+  font-size: 64px;
+}
+.fs-1 {
+  font-size: 32px;
+}
+.fs-2 {
+  font-size: 24px;
+}
+.fs-3 {
+  font-size: 20px;
+}
+
+.white {
+  color: white;
+}
+
+/*樣式*/
+
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.df {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-fe {
+  justify-content: flex-end;
+}
+
+/*paddig maring設定*/
+.ml-24 {
+  margin-left: 24px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-36 {
+  margin-bottom: 36px;
+}
+
+.mb-28 {
+  margin-bottom: 28px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.pt-160 {
+  padding-top: 160px;
+}
+
+.pr-24 {
+  padding-right: 24px;
+}
+.pb-160 {
+  padding-bottom: 160px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+/*layout*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  li {
+    color: #d1d1d1;
+  }
+}
+.header {
+  background-color: black;
+  padding: 40px 0;
+}
+/*component*/
+.btn {
+  padding: 12px 24px;
+  border-radius: 32px;
+}
+
+/*page*/
+.intro {
+  background-image: url("./img/background-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner {
+  background-color: black;
+  color: #d1d1d1;
+}
+
+.btn-light {
+  background: white;
+  color: black;
+  &:hover {
+    color: white;
+    background-color: black;
+    img {
+      content: url("./img/arrow_outward-white.png");
+    }
+  }
+}
+
+.btn-dark {
+  background: black;
+  color: white;
+  &:hover {
+    color: black;
+    background-color: white;
+    img {
+      content: url("./img/arrow_outward.png");
+    }
+  }
+}
+
+.contact {
+  margin-left: 24px;
+}
+
+.span {
+  color: #00ffa3;
+  font-size: 128px;
+  text-align: right;
+  display: block;
+}
+
+.intro-desc {
+  width: 526px;
+  color: #ffffff;
+}
+
+.leftbox {
+  width: 636px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.rightbox {
+  width: 526px;
+}
+
+.detail {
+  border: 1px solid rgba(227, 227, 227, 1);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  width: 306px;
+  p {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+.contactinfo {
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+  padding: 96px 0;
+}
+
+.social-link {
+  border-radius: 40px;
+  transition: 1s;
+  &:hover {
+    box-shadow: 0px 0px 16px 3px #9094ffe5;
+  }
+}
+
+.contact-png {
+  width: 526px;
+  justify-content: space-between;
+  margin-left: 113px;
+}
+
+.project-title {
+  width: 746px;
+  margin-left: auto;
+}
+
+.project-content {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer {
+  background-color: black;
+  text-align: center;
+  padding: 40px 0;
+}
